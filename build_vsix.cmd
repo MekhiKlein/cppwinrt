@@ -35,3 +35,4 @@ rem Build nuget
 
 rem Build vsix
 call msbuild /restore /p:Configuration=%target_configuration%,Platform="Any CPU",Deployment=%target_deployment%,CppWinRTVersion=%target_version%,NatvisDirx86=%this_dir%natvis\x86\%target_configuration%\%target_deployment%,NatvisDirx64=%this_dir%natvis\x64\%target_configuration%\%target_deployment%,NatvisDirarm64=%this_dir%natvis\arm64\%target_configuration%\%target_deployment%,NupkgDir=%this_dir%_build vsix\vsix.sln
+ 
